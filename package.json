@@ -1,0 +1,23 @@
+{
+  "name": "node-logger-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "autocannon -c 100 -d 5 http://localhost:3000",
+    "start:pino": "node index-pino.js",
+    "start:winston": "node index-winston.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-pino-logger": "^3.0.0",
+    "winston": "^3.3.3",
+    "winston-context": "0.0.7"
+  },
+  "devDependencies": {
+    "autocannon": "^6.5.0"
+  }
+}
